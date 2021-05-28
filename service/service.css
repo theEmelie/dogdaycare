@@ -1,0 +1,100 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	font-size: 15px;
+}
+
+td, th {
+    border: 1px solid #ddd;
+	padding: 12px 15px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #033153;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+	border-bottom: 2px solid #033153;
+}
+
+li {
+	font-size: 15px;
+}
+
+
+.container {
+	grid-template-rows: 200px 50px 1000px 100px auto;
+	grid-template-areas: 
+	  "logo logo logo logo"
+	  "navbar navbar navbar navbar"
+	  "rollingImages rollingImages rollingImages rollingImages"
+	  "header header header header"
+	  "textOne textOne textOne textOne"
+	  "footer footer footer footer";
+}
+
+.textTwo {
+	grid-area: textTwo;
+}
+
+.textThree {
+	grid-area: textThree;
+}
+
+.imageTwo {
+	grid-area: imageTwo;
+}
+
+
+/* TABLETS */
+@media screen and (max-width: 1025px) {
+	.container {
+		grid-template-rows: auto auto 550px;
+		grid-template-areas: 
+		"logo logo logo logo"
+		"navbar navbar navbar navbar"
+		"rollingImages rollingImages rollingImages rollingImages"
+		"header header header header"
+		"textOne textOne textOne textOne"
+		"footer footer footer footer";
+	}
+
+	li {
+		font-size: 18px;
+	}
+
+	table {
+		width: 100%;
+		font-size: 18px;
+	}
+}
+
+/* MOBILES */
+@media screen and (max-width: 767px) {
+	.container {
+		grid-template-rows: auto auto 250px;
+		grid-template-areas:
+		"logo logo logo logo"
+		"navbar navbar navbar navbar"
+		"rollingImages rollingImages rollingImages rollingImages"
+		"header header header header"
+		"textOne textOne textOne textOne"
+		"footer footer footer footer";
+	}
+
+	table {
+		width: 100%;
+		font-size: 10px;
+	}
+
+}

@@ -1,0 +1,62 @@
+.container {
+	grid-template-rows: 200px 50px 1000px 100px auto auto 200px;
+	grid-template-areas: 
+	  "logo logo logo logo"
+	  "navbar navbar navbar navbar"
+	  "rollingImages rollingImages rollingImages rollingImages"
+	  "header header header header"
+      "textOne textOne textOne textOne"
+	  "contact contact contact contact"
+	  "footer footer footer footer";
+}
+
+#contact {
+    grid-area: contact;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box; 
+}
+
+textarea {
+    height: 150px;
+	resize: none;
+}
+
+.textOne {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+/* Tablets */
+@media screen and (max-width: 1025px) {
+	.container {
+		grid-template-rows: auto auto 550px;
+		grid-template-areas: 
+		"logo logo logo logo"
+		"navbar navbar navbar navbar"
+		"rollingImages rollingImages rollingImages rollingImages"
+		"header header header header"
+		"textOne textOne textOne textOne"
+		"contact contact contact contact"
+		"footer footer footer footer";
+	}
+}
+
+/* Mobile phones */
+@media screen and (max-width: 767px) {
+	.container {
+		grid-template-rows: auto auto 250px;
+		grid-template-areas:
+		"logo logo logo logo"
+		"navbar navbar navbar navbar"
+		"rollingImages rollingImages rollingImages rollingImages"
+		"header header header header"
+		"textOne textOne textOne textOne"
+		"contact contact contact contact"
+		"footer footer footer footer";
+	}
+}
