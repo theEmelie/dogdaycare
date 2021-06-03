@@ -1,6 +1,6 @@
 .container {
-	grid-template-rows: 200px 50px 1000px auto auto;
-	grid-template-areas: 
+	grid-template-rows: 200px 50px 1000px 115px auto;
+	grid-template-areas:
 	  "logo logo logo logo"
 	  "navbar navbar navbar navbar"
 	  "rollingImages rollingImages rollingImages rollingImages"
@@ -14,19 +14,15 @@
 	margin-bottom: 15px;
 }
 
-.textTwo {
+.text-two {
 	grid-area: textTwo;
 }
 
-.textThree {
-	grid-area: textThree;
-}
-
-.imageTwo {
+.image-two {
 	grid-area: imageTwo;
 }
 
-.main-image-one, 
+.main-image-one,
 .main-image-two {
 	width: 336px;
 }
@@ -43,7 +39,7 @@
 @media screen and (max-width: 1025px) {
 	.container {
 		grid-template-rows: auto auto 550px;
-		grid-template-areas: 
+		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"
 		"rollingImages rollingImages rollingImages rollingImages"

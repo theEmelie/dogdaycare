@@ -15,7 +15,7 @@ th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #033153;
+    background-color: #fbb03b;
     color: white;
 }
 
@@ -24,17 +24,13 @@ tr:nth-child(even) {
 }
 
 tbody tr:last-of-type {
-	border-bottom: 2px solid #033153;
-}
-
-li {
-	font-size: 15px;
+	border-bottom: 2px solid #fbb03b;
 }
 
 
 .container {
 	grid-template-rows: 200px 50px 1000px 100px auto;
-	grid-template-areas: 
+	grid-template-areas:
 	  "logo logo logo logo"
 	  "navbar navbar navbar navbar"
 	  "rollingImages rollingImages rollingImages rollingImages"
@@ -43,24 +39,12 @@ li {
 	  "footer footer footer footer";
 }
 
-.textTwo {
-	grid-area: textTwo;
-}
-
-.textThree {
-	grid-area: textThree;
-}
-
-.imageTwo {
-	grid-area: imageTwo;
-}
-
 
 /* TABLETS */
 @media screen and (max-width: 1025px) {
 	.container {
 		grid-template-rows: auto auto 550px;
-		grid-template-areas: 
+		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"
 		"rollingImages rollingImages rollingImages rollingImages"
@@ -69,9 +53,9 @@ li {
 		"footer footer footer footer";
 	}
 
-	li {
+	/* li {
 		font-size: 18px;
-	}
+	} */
 
 	table {
 		width: 100%;

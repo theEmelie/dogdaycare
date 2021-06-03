@@ -1,54 +1,75 @@
 .container {
 	grid-template-rows: 200px 50px 1000px 100px auto;
-	grid-template-areas: 
+	grid-template-areas:
 	  "logo logo logo logo"
 	  "navbar navbar navbar navbar"
 	  "rollingImages rollingImages rollingImages rollingImages"
 	  "header header header header"
 	  "textOne textOne image image"
 	  "textTwo textTwo imageTwo imageTwo"
+	  "textThree textThree imageThree imageThree"
 	  "footer footer footer footer";
 }
 
-.textOne, .image {
+.text-one,
+.image-one,
+.text-two,
+.image-two {
 	margin-top: 15px;
-	margin-bottom: 15px;
 }
 
-.image {
-	border-bottom: 1px solid black;
-	
-}
-
-.textOne {
-	font-size: 55px;
-	text-align: center;
+.image-one,
+.text-one {
 	border-bottom: 1px solid black;
 }
 
-.textTwo {
-	grid-area: textTwo;
-	font-size: 55px;
-	text-align: center;
+.text-two {
+	border-bottom: 1px solid black;
+}
+
+.image-one {
+	border-bottom: 1px solid black;
+}
+
+.image-two {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.image-three {
+	grid-area: imageThree;
 	border-top: 1px solid black;
 }
 
-.imageTwo {
-	grid-area: imageTwo;
+.text-two,
+.image-two {
+	margin-bottom: 15px;
+}
+
+.text-one,
+.text-two,
+.text-three {
+	font-size: 55px;
+	text-align: center;
+}
+
+.text-two,
+.text-three {
 	border-top: 1px solid black;
 }
 
 .main-image-one {
-	/* margin-left: 30px; */
 	margin-bottom: 15px;
 }
 
-.main-image-one, 
-.main-image-two {
+.main-image-one,
+.main-image-two,
+.main-image-three {
 	width: 336px;
 }
 
-.main-image-two {
+.main-image-two,
+.main-image-three {
 	margin-top: 15px;
 }
 
@@ -56,12 +77,14 @@
 @media screen and (max-width: 1025px) {
 	.container {
 		grid-template-rows: auto auto 550px;
-		grid-template-areas: 
+		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"
 		"rollingImages rollingImages rollingImages rollingImages"
 		"header header header header"
 		"textOne textOne image image"
+		"textTwo textTwo imageTwo imageTwo"
+  	  	"textThree textThree imageThree imageThree"
 		"footer footer footer footer";
 	}
 }
@@ -77,6 +100,28 @@
 		"header header header header"
 		"textOne textOne textOne textOne"
 		"image image image image"
+		"textTwo textTwo textTwo textTwo "
+		"imageTwo imageTwo imageTwo imageTwo"
+		"textThree textThree textThree textThree"
+		"imageThree imageThree imageThree imageThree"
 		"footer footer footer footer";
+	}
+
+	.text-one,
+	.text-two,
+	.text-three {
+		font-size: 30px;
+	}
+
+	.image-one,
+	.text-one,
+	.text-two,
+	.image-two {
+		border-bottom: none;
+	}
+
+	.image-two,
+	.image-three {
+		border-top: none;
 	}
 }
