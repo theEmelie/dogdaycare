@@ -1,5 +1,5 @@
 .container {
-	grid-template-rows: 200px 50px 1000px 115px auto;
+	grid-template-rows: 200px 50px 950px 115px auto;
 	grid-template-areas:
 	  "logo logo logo logo"
 	  "navbar navbar navbar navbar"
@@ -35,7 +35,7 @@
 	margin-right: 15px;
 }
 
-/* Tablets */
+/* TABLETS */
 @media screen and (max-width: 1025px) {
 	.container {
 		grid-template-rows: auto auto 550px;
@@ -50,7 +50,7 @@
 	}
 }
 
-/* Mobile phones */
+/* MOBILES */
 @media screen and (max-width: 767px) {
 	.container {
 		grid-template-rows: auto auto 250px;

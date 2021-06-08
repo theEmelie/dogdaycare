@@ -1,1 +1,1 @@
-var contact = document.getElementById('contact-form');
+var contactForm = document.getElementById('contact-form');
