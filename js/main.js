@@ -2,15 +2,45 @@ var cycleIndex = 0;
 showCycleImages();
 
 function showCycleImages() {
-    var slides = document.getElementsByClassName("cycle-images");
-    for (var i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    // Get the cycle-images elements
+    var cycles = document.getElementsByClassName("cycle-images");
+
+    // Set all the image elements display to none
+    for (var i = 0; i < cycles.length; i++) {
+        cycles[i].style.display = "none";
     }
+
+    // Add 1 to index
     cycleIndex++;
-    if (cycleIndex > slides.length)
+
+    // See if index is bigger than the length of the elements. If so set index to 1
+    if (cycleIndex > cycles.length)
     {
-        cycleIndex = 1
+        cycleIndex = 1;
     }
-    slides[cycleIndex-1].style.display = "block";
-    setTimeout(showCycleImages, 3500); // Change image every 3.5 seconds
+
+    // Set display to block on the first image
+    cycles[cycleIndex-1].style.display = "block";
+
+    // Change image every 3.5 seconds
+    setTimeout(showCycleImages, 3500);
+}
+
+
+function cycleImages() {
+    var cycles = $(".cycle-images");
+
+     $('.cycle-images').css({
+         'display': 'none'
+     });
+
+     cycleIndex++;
+     if (cycleIndex > cycles.length)
+     {
+         cycleIndex = 1
+     }
+
+
+     $(".cycle-images").next().css({"display": "block"});
+     setTimeout(cycleImages, 3500); // Change image every 3.5 seconds
 }

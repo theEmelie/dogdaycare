@@ -33,14 +33,19 @@ form .details .input {
 	width: calc(100% / 2 - 15px);
 }
 
-.details .input .name {
+.details .input .firstname,
+.details .input .lastname,
+.details .input .email,
+.details .input .mobile,
+.details .input .question {
 	display: block;
 	font-weight: 500;
 	margin-bottom: 5px;
 }
 
 .details .input input,
-textarea {
+textarea,
+button {
 	height: 45px;
 	width: 100%;
 	outline: none;
@@ -56,15 +61,10 @@ textarea {
 .details .input input:valid,
 .details .input textarea:focus,
 .details .input textarea:valid {
-	border-color: #fbb03b;;
+	border-color: #fbb03b;
 }
 
-form .submit {
-	height: 45px;
-	margin: 45px 0;
-}
-
-form .button input {
+button {
 	height: 45px;
 	width: 100%;
 	outline: none;
@@ -74,7 +74,6 @@ form .button input {
 	border-radius: 5px;
 	letter-spacing: 1px;
 	background-color: #fbb03b;
-	/* background: linear-gradient(135deg, #033153, #e8b6d9); */
 }
 
 textarea {
@@ -82,12 +81,20 @@ textarea {
     height: 150px;
 	resize: none;
 	padding: 12px 2px 1px 15px;
-	/* font-size: 15px; */
 }
 
 .text-one {
 	margin-top: 15px;
 	margin-bottom: 30px;
+}
+
+.alert-danger {
+	background-color: red;
+	font-size: 50px;
+}
+
+.alert-success {
+	background-color: green;
 }
 
 /* TABLETS */

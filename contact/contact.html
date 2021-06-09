@@ -1,119 +1,125 @@
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kontakt</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="contact.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Glada Tassar | Kontakt</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="contact.css">
+	</head>
+	<body>
 
-<div class="container">
-	<div class="logo">
-		<img src="../img/logo/dog-logo.png" alt="Dog logo" class="logo-image"></img>
-		<h1 class="logo-header">Hunddagiset<br>Glada Tassar</h1>
-	</div>
-
-	<nav class="navbar">
-		<a href="../index.html">Hem</a>
-		<a href="../service/service.html">Priser</a>
-		<a href="contact.html">Kontakt</a>
-		<a href="../dogs/dogs.html">Våra Hundar</a>
-		<span class="contact-info">contact@gladatassar.com - 08-4593032</span>
-	</nav>
-
-	<section class="cycle-images-container">
-		<div class="cycle-images fade">
-			<img src="../img/dogs/max.jpg" class="dog-cycle"></img>
-		</div>
-
-		<div class="cycle-images fade">
-			<img src="../img/dogs/maxOne.jpg" class="dog-cycle"></img>
-		</div>
-
-		<div class="cycle-images fade">
-			<img src="../img/dogs/maxTwo.jpg" class="dog-cycle"></img>
-		</div>
-	</section>
-
-	<section class="header">
-		<h1>KONTAKTA OSS!</h1>
-	</section>
-
-	<section class="text-one">
-		<p>För frågor, önskemål och dagisplats. Fyll i formuläret nedan, så återkommer vi till dig snarast.<p>
-	</section>
-	<form id="contact-form">
-		<div class="details">
-			<div class="input">
-				<span class="name">Förnamn</span>
-				<input type="text" id="firstname" name="firstname" required>
+		<div class="container">
+			<div class="logo">
+				<img src="../img/logo/dog-logo.png" alt="Dog logo" class="logo-image"></img>
+				<h1 class="logo-header">Hunddagiset<br>Glada Tassar</h1>
 			</div>
 
-			<div class="input">
-				<span class="name">Efternamn:</span>
-				<label for="lastname"></label>
-				<input type="text" id="lastname" name="lastname" required>
-			</div>
+			<nav class="navbar">
+				<a href="../index.html">Hem</a>
+				<a href="../service/service.html">Priser</a>
+				<a href="contact.html">Kontakt</a>
+				<a href="../dogs/dogs.html">Våra Hundar</a>
+				<a href="../gallery/gallery.html">Galleri</a>
+				<span class="contact-info">contact@gladatassar.com - 08-4593032</span>
+			</nav>
 
-			<div class="input">
-				<span class="name">Epost:</span>
-				<label for="email"></label>
-				<input type="text" id="email" name="email" required>
-			</div>
+			<section class="cycle-images-container">
+				<div class="cycle-images fade">
+					<img src="../img/dogs/max.jpg" class="dog-cycle"></img>
+				</div>
 
-			<div class="input">
-				<span class="name">Mobilnummer:</span>
-				<label for="phonenumber"></label>
-				<input type="text" id="phonenumber" name="phonenumber" required>
-			</div>
+				<div class="cycle-images fade">
+					<img src="../img/dogs/maxOne.jpg" class="dog-cycle"></img>
+				</div>
 
-			<div class="input">
-				<span class="name">Fråga/Önskemål:</span>
-				<label for="question"></label>
-				<textarea id="question" name="question" required></textarea>
-			</div>
+				<div class="cycle-images fade">
+					<img src="../img/dogs/maxTwo.jpg" class="dog-cycle"></img>
+				</div>
+			</section>
+
+			<section class="header">
+				<h1>KONTAKTA OSS!</h1>
+			</section>
+
+			<section class="text-one">
+				<p>För frågor, önskemål och dagisplats. Fyll i formuläret nedan, så återkommer vi till dig snarast.<p>
+			</section>
+
+
+			<form id="contact-form">
+				<div class="details">
+					<div class="input">
+						<span class="firstname">Förnamn</span>
+						<input type="text" id="firstname" name="firstname" >
+					</div>
+
+					<div class="input">
+						<span class="lastname">Efternamn:</span>
+						<label for="lastname"></label>
+						<input type="text" id="lastname" name="lastname" >
+					</div>
+
+					<div class="input">
+						<span class="email">Epost:</span>
+						<label for="email"></label>
+						<input type="text" id="email" name="email" >
+					</div>
+
+					<div class="input">
+						<span class="mobile">Mobilnummer:</span>
+						<label for="phonenumber"></label>
+						<input type="text" id="phonenumber" name="phonenumber" >
+					</div>
+
+					<div class="input">
+						<span class="question">Fråga/Önskemål:</span>
+						<label for="question"></label>
+						<textarea id="question" name="question" ></textarea>
+					</div>
+				</div>
+				<div class="button">
+					<button type="submit" value="Submit">Submit</button>
+				</div>
+			</form>
+
+			<footer class="footer">
+				<section class="contact-footer">
+					<h3>KONTAKT</h3>
+					<b>Hunddagiset Glada Tassar</b>
+		            <br>
+		            Stockholmvägen 48B,
+					<br>
+					198 32, Stockholm
+					<br>
+		            contact@gladatassar.com
+		            <br>
+		            08-4593032
+		            <br>
+				</section>
+				<section class="navigate-footer">
+					<h3>NAVIGERA</h3>
+					<a href="../index.html">Hem</a><br>
+					<a href="../service/service.html">Priser</a><br>
+					<a href="contact.html">Kontakt</a><br>
+					<a href="../dogs/dogs.html">Våra Hundar</a><br>
+					<a href="../gallery/gallery.html">Galleri</a>
+				</section>
+				<section class="times-footer">
+					<h3>ÖPPETIDER</h3>
+					Hunddagiset är öppet måndag till fredag från kl.06.30 till 18.00.
+					<br>
+					Afton och röda dagar är det stängt.
+					<br>
+					Övrig tid, enligt överenskommelse.
+				</section>
+				<!-- <section class="copyright-footer">
+					Copyright 2021 &copy; Glada Tassar
+				</section> -->
+			</footer>
 		</div>
-		<div class="button">
-			<input type="submit" value="Submit">
-		</div>
-	</form>
-
-	<footer class="footer">
-		<section class="contact-footer">
-			<h3>KONTAKT</h3>
-			<b>Hunddagiset Glada Tassar</b>
-            <br>
-            Stockholmvägen 48B,
-			<br>
-			198 32, Stockholm
-			<br>
-            contact@gladatassar.com
-            <br>
-            08-4593032
-            <br>
-		</section>
-		<section class="navigate-footer">
-			<h3>NAVIGERA</h3>
-			<a href="../index.html">Hem</a><br>
-			<a href="../service/service.html">Priser</a><br>
-			<a href="contact.html">Kontakt</a><br>
-			<a href="../dogs/dogs.html">Våra Hundar</a><br>
-		</section>
-		<section class="times-footer">
-			<h3>ÖPPETIDER</h3>
-			Hunddagiset är öppet måndag till fredag från kl.06.30 till 18.00.
-			<br>
-			Afton och röda dagar är det stängt.
-			<br>
-			Övrig tid, enligt överenskommelse.
-		</section>
-		<!-- <section class="copyright-footer">
-			Copyright 2021 &copy; Glada Tassar
-		</section> -->
-	</footer>
-</div>
-
-</body>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+		<!-- <script src="../js/main.js"></script> -->
+		<script src="contact.js"></script>
+	</body>
 </html>

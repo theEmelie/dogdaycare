@@ -1,3 +1,3 @@
-A fictional dogdaycare website done with plain HTML, CSS and JavaScript.
+<h2>A fictional dogdaycare website done with plain HTML, CSS and JavaScript.<h2>
 
-All dogs displayed are my own.
+<i>All dogs displayed are my own.</i>
