@@ -1,5 +1,5 @@
 .container {
-	grid-template-rows: 200px 50px 1000px 100px auto;
+	grid-template-rows: 200px 50px 1000px auto auto;
 	grid-template-areas:
 	  "logo logo logo logo"
 	  "navbar navbar navbar navbar"
@@ -13,6 +13,60 @@
     grid-area: gallery;
 }
 
+.image-col {
+  float: left;
+  padding: 10px;
+}
+
+.gallery-image {
+	width: 100px;
+}
+
+.image-col img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.image-col img:hover {
+  opacity: 1;
+}
+
+.image-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.expanding-image-container {
+  position: relative;
+  display: none;
+}
+
+#expanded-image {
+	width: 100%;
+}
+
+#caption {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fbb03b;
+  font-size: 20px;
+}
+
+.closeButton {
+	position: absolute;
+	width: 40px;
+	top: 10px;
+	right: 15px;
+	color: #fbb03b;
+	background-color: rgba(0,0,0,0.9);
+	opacity: 0.7;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	cursor: pointer;
+}
 
 /* TABLETS */
 @media screen and (max-width: 1025px) {

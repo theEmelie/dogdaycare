@@ -4,6 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Glada Tassar | Våra Hundar</title>
+		<link rel="shortcut icon" type="image/jpg" href="../img/favicon.png"/>
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<link rel="stylesheet" type="text/css" href="gallery.css">
 	</head>
@@ -41,10 +42,31 @@
 			<section class="header">
 				<h1>GALLERI!</h1>
 			</section>
-
 			<section class="gallery">
-                
-			</section>
+				<h3>Klicka på en bild för att göra den större!</h3>
+
+				<div class="image-row">
+				  	<div class="image-col">
+						<img src="../img/allDogs/max.jpg" alt="Nature" class="gallery-image" onclick="galleryExpandImage(this);">
+					</div>
+					<div class="image-col">
+						<img src="../img/allDogs/max.jpg" alt="Snow" class="gallery-image" onclick="galleryExpandImage(this);">
+					</div>
+					<div class="image-col">
+						<img src="../img/allDogs/max.jpg" alt="Mountains" class="gallery-image" onclick="galleryExpandImage(this);">
+					</div>
+					<div class="image-col">
+						<img src="../img/allDogs/max.jpg" alt="Lights" class="gallery-image" onclick="galleryExpandImage(this);">
+					</div>
+			 	</div>
+
+				<div class="expanding-image-container">
+					<span onclick="this.parentElement.style.display='none'" class="closeButton">&times;</span>
+
+					<img id="expanded-image">
+					<div id="caption"></div>
+			 	</div>
+		 	</section>
 
 			<footer class="footer">
 				<section class="contact-footer">
@@ -80,5 +102,6 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="../js/main.js"></script>
+		<script src="gallery.js"></script>
 	</body>
 </html>
