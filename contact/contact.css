@@ -1,5 +1,5 @@
 .container {
-	grid-template-rows: 200px 50px 1000px 100px auto auto 200px;
+	grid-template-rows: 200px 50px 900px 100px auto auto 200px;
 	grid-template-areas:
 	  "logo logo logo logo"
 	  "navbar navbar navbar navbar"
@@ -16,8 +16,10 @@
 
 form {
 	box-sizing: border-box;
-	border-top: 1px solid black;
-	padding: 10px;
+}
+
+.question-text {
+	color: black;
 }
 
 .container form .details {
@@ -68,12 +70,13 @@ button {
 	height: 45px;
 	width: 100%;
 	outline: none;
-	color: #fff;
+	color: black;
 	border: none;
 	font-weight: 500;
 	border-radius: 5px;
 	letter-spacing: 1px;
 	background-color: #fbb03b;
+	cursor: pointer;
 }
 
 textarea {
@@ -85,22 +88,21 @@ textarea {
 
 .text-one {
 	margin-top: 15px;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 }
 
-.alert-danger {
-	background-color: red;
-	font-size: 50px;
-}
-
-.alert-success {
-	background-color: green;
+.success-msg {
+	background-color: #46D666;
+	font-size: 25px;
+	padding: 1%;
+	border-radius: 5px;
+	width: 750px;
 }
 
 /* TABLETS */
 @media screen and (max-width: 1025px) {
 	.container {
-		grid-template-rows: auto auto 550px;
+		grid-template-rows: auto auto 550px 100px;
 		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"
@@ -115,7 +117,7 @@ textarea {
 /* MOBILES */
 @media screen and (max-width: 767px) {
 	.container {
-		grid-template-rows: auto auto 250px;
+		grid-template-rows: auto auto 250px 160px;
 		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"

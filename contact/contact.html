@@ -4,6 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Glada Tassar | Kontakt</title>
+		<link rel="shortcut icon" type="image/jpg" href="../img/favicon.png"/>
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<link rel="stylesheet" type="text/css" href="contact.css">
 	</head>
@@ -43,11 +44,12 @@
 			</section>
 
 			<section class="text-one">
-				<p>För frågor, önskemål och dagisplats. Fyll i formuläret nedan, så återkommer vi till dig snarast.<p>
+				<h3 class="question-text">För frågor, önskemål och dagisplats. Fyll i formuläret nedan, så återkommer vi till dig snarast.<h3>
 			</section>
 
 
 			<form id="contact-form">
+				<div id="messages"></div>
 				<div class="details">
 					<div class="input">
 						<span class="firstname">Förnamn</span>
@@ -69,7 +71,7 @@
 					<div class="input">
 						<span class="mobile">Mobilnummer:</span>
 						<label for="phonenumber"></label>
-						<input type="text" id="phonenumber" name="phonenumber" required>
+						<input type="number" id="phonenumber" name="phonenumber" required>
 					</div>
 
 					<div class="input">
@@ -118,8 +120,7 @@
 				</section> -->
 			</footer>
 		</div>
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-		<!-- <script src="../js/main.js"></script> -->
+		<script src="../js/main.js"></script>
 		<script src="contact.js"></script>
 	</body>
 </html>
