@@ -2,13 +2,8 @@ h2 {
 	margin-bottom: 0;
 }
 
-h3 {
-	font-size: 13px;
-	font-style: italic;
-}
-
 .container {
-	grid-template-rows: 200px 50px 1000px 100px auto;
+	grid-template-rows: 200px 50px 900px 100px auto;
 	grid-template-areas:
 	  "logo logo logo logo"
 	  "navbar navbar navbar navbar"
@@ -87,14 +82,18 @@ h3 {
 	margin-top: 15px;
 }
 
+.breed-info {
+	font-size: 13px;
+	font-style: italic;
+}
 
 /* ZOOMING IMAGE WHEN CLICKED */
 #dogImage,
 #dogImageTwo,
 #dogImageThree {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
 }
 
 #dogImage:hover,
@@ -104,70 +103,69 @@ h3 {
 }
 
 .zoom {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9);
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
 }
 
 .zoom-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
 }
 
 #caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+	margin: auto;
+	display: block;
+	width: 80%;
+	text-align: center;
+	color: #fbb03b;
+	padding: 10px;
+	height: 150px;
 }
 
 .zoom-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.5s;
+	animation-name: zoom;
+	animation-duration: 0.5s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+	from {transform:scale(0)}
+	to {transform:scale(1)}
 }
 
 .closeButton {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-  cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	color: #fbb03b;
+	font-size: 50px;
+	font-weight: bold;
+	transition: 0.3s;
+	cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 
 /* TABLETS */
 @media screen and (max-width: 1025px) {
 	.container {
-		grid-template-rows: auto auto 550px;
+		grid-template-rows: auto auto 550px 100px;
 		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"
@@ -187,7 +185,7 @@ h3 {
 /* MOBILES */
 @media screen and (max-width: 767px) {
 	.container {
-		grid-template-rows: auto auto 250px;
+		grid-template-rows: auto auto 250px 160px;
 		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"
