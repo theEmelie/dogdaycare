@@ -1,5 +1,5 @@
 .container {
-	grid-template-rows: 200px 50px 950px 115px auto;
+	grid-template-rows: 200px 50px 900px 115px auto;
 	grid-template-areas:
 	  "logo logo logo logo"
 	  "navbar navbar navbar navbar"
@@ -16,6 +16,11 @@
 
 .text-two {
 	grid-area: textTwo;
+	margin-left: 15px;
+}
+
+.text-one {
+	margin-right: 15px;
 }
 
 .image-two {
@@ -28,17 +33,21 @@
 }
 
 .main-image-one {
-	margin-left: 15px;
+	width: 100%;
+	border-radius: 5px;
 }
 
 .main-image-two {
 	margin-right: 15px;
+	width: 100%;
+	border-radius: 5px;
 }
+
 
 /* TABLETS */
 @media screen and (max-width: 1025px) {
 	.container {
-		grid-template-rows: auto auto 550px;
+		grid-template-rows: auto auto 550px 115px;
 		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"
@@ -53,7 +62,7 @@
 /* MOBILES */
 @media screen and (max-width: 767px) {
 	.container {
-		grid-template-rows: auto auto 250px;
+		grid-template-rows: auto auto 250px 120px;
 		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"

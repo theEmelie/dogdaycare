@@ -35,13 +35,13 @@ textarea {
 	display: flex;
 }
 
+/* .dog-quote {
+	margin-left: auto;
+} */
+
 .logo-header {
 	font-size: 50px;
 	margin-left: 15px;
-}
-
-.dog-quote {
-	margin-left: auto;
 }
 
 .header {
@@ -212,6 +212,11 @@ a:hover {
 		font-size: 17px;
 	}
 
+	.contact-info {
+		margin-top: 5px;
+		margin-left: 1px;
+	}
+
 }
 
 /* MOBILES */
@@ -238,7 +243,7 @@ a:hover {
 	.contact-footer,
 	.navigate-footer,
 	.times-footer {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.contact-footer,
@@ -253,7 +258,7 @@ a:hover {
 	}
 
 	.navigate-footer a {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 
