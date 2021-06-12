@@ -23,10 +23,6 @@
 	margin-right: 15px;
 }
 
-.image-two {
-	grid-area: imageTwo;
-}
-
 .main-image-one,
 .main-image-two {
 	width: 336px;
