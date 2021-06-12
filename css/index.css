@@ -1,5 +1,5 @@
 .container {
-	grid-template-rows: 200px 50px 900px 115px auto;
+	grid-template-rows: 200px 50px 800px 115px auto;
 	grid-template-areas:
 	  "logo logo logo logo"
 	  "navbar navbar navbar navbar"
