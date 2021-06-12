@@ -5,7 +5,7 @@ function showCycleImages() {
     // Get the cycle-images elements
     var cycles = document.getElementsByClassName("cycle-images");
 
-    // Set all the image elements display to none
+    // Set all the image elements display: none
     for (var i = 0; i < cycles.length; i++) {
         cycles[i].style.display = "none";
     }
@@ -19,7 +19,7 @@ function showCycleImages() {
         cycleIndex = 1;
     }
 
-    // Set display to block on the first image
+    // Set display: block on the first image
     cycles[cycleIndex-1].style.display = "block";
 
     // Change image every 3.5 seconds
@@ -27,20 +27,20 @@ function showCycleImages() {
 }
 
 
-function cycleImages() {
-    var cycles = $(".cycle-images");
-
-     $('.cycle-images').css({
-         'display': 'none'
-     });
-
-     cycleIndex++;
-     if (cycleIndex > cycles.length)
-     {
-         cycleIndex = 1
-     }
-
-
-     $(".cycle-images").next().css({"display": "block"});
-     setTimeout(cycleImages, 3500); // Change image every 3.5 seconds
-}
+// function cycleImages() {
+//     var cycles = $(".cycle-images");
+//
+//      $('.cycle-images').css({
+//          'display': 'none'
+//      });
+//
+//      cycleIndex++;
+//      if (cycleIndex > cycles.length)
+//      {
+//          cycleIndex = 1
+//      }
+//
+//
+//      $(".cycle-images").next().css({"display": "block"});
+//      setTimeout(cycleImages, 3500); // Change image every 3.5 seconds
+// }
