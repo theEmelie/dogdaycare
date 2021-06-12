@@ -15,11 +15,12 @@
 
 .image-col {
 	float: left;
-	padding: 10px;
+	margin: 0 10px 15px 0;
+	border: 1px solid #fbb03b;
 }
 
 .gallery-image {
-	width: 100px;
+	height: 100px;
 
 }
 
