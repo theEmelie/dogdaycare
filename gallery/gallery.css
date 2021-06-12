@@ -1,5 +1,5 @@
 .container {
-	grid-template-rows: 200px 50px 1000px auto auto;
+	grid-template-rows: 200px 50px 900px 100px auto;
 	grid-template-areas:
 	  "logo logo logo logo"
 	  "navbar navbar navbar navbar"
@@ -14,32 +14,33 @@
 }
 
 .image-col {
-  float: left;
-  padding: 10px;
+	float: left;
+	padding: 10px;
 }
 
 .gallery-image {
 	width: 100px;
+
 }
 
 .image-col img {
-  opacity: 0.8;
-  cursor: pointer;
+	opacity: 0.8;
+	cursor: pointer;
 }
 
 .image-col img:hover {
-  opacity: 1;
+	opacity: 1;
 }
 
 .image-row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .expanding-image-container {
-  position: relative;
-  display: none;
+	position: relative;
+	display: none;
 }
 
 #expanded-image {
@@ -47,11 +48,11 @@
 }
 
 #caption {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: #fbb03b;
-  font-size: 20px;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: #fbb03b;
+	font-size: 20px;
 }
 
 .closeButton {
@@ -71,7 +72,7 @@
 /* TABLETS */
 @media screen and (max-width: 1025px) {
 	.container {
-		grid-template-rows: auto auto 550px;
+		grid-template-rows: auto auto 550px 100px;
 		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"
@@ -85,7 +86,7 @@
 /* MOBILES */
 @media screen and (max-width: 767px) {
 	.container {
-		grid-template-rows: auto auto 250px;
+		grid-template-rows: auto auto 250px 100px;
 		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"

@@ -29,7 +29,7 @@ tbody tr:last-of-type {
 
 
 .container {
-	grid-template-rows: 200px 50px 1000px 100px auto;
+	grid-template-rows: 200px 50px 900px 100px auto;
 	grid-template-areas:
 	  "logo logo logo logo"
 	  "navbar navbar navbar navbar"
@@ -42,7 +42,7 @@ tbody tr:last-of-type {
 /* TABLETS */
 @media screen and (max-width: 1025px) {
 	.container {
-		grid-template-rows: auto auto 550px;
+		grid-template-rows: auto auto 550px 100px;
 		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"
@@ -51,10 +51,6 @@ tbody tr:last-of-type {
 		"textOne textOne textOne textOne"
 		"footer footer footer footer";
 	}
-
-	/* li {
-		font-size: 18px;
-	} */
 
 	table {
 		width: 100%;
@@ -65,7 +61,7 @@ tbody tr:last-of-type {
 /* MOBILES */
 @media screen and (max-width: 767px) {
 	.container {
-		grid-template-rows: auto auto 250px;
+		grid-template-rows: auto auto 250px 100px;
 		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"
