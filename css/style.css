@@ -77,8 +77,8 @@ a:hover {
 	color: black;
 }
 
-.navbar a:active {
-	color: black;
+.active {
+	font-weight: bold;
 }
 
 .contact-info {

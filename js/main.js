@@ -22,10 +22,9 @@ function showCycleImages() {
     // Set display: block on the first image
     cycles[cycleIndex-1].style.display = "block";
 
-    // Change image every 3.5 seconds
-    setTimeout(showCycleImages, 3500);
+    // Change image every 5 seconds
+    setTimeout(showCycleImages, 5000);
 }
-
 
 // function cycleImages() {
 //     var cycles = $(".cycle-images");
