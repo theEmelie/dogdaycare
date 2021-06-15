@@ -47,7 +47,7 @@
 /* MEDIUM DESKTOPS */
 @media screen and (max-width: 1200px) {
 	.container {
-		grid-template-rows: auto auto 550px 115px;
+		grid-template-rows: auto auto 700px 115px;
 		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"

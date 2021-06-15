@@ -73,7 +73,7 @@
 /* TABLETS */
 @media screen and (max-width: 1200px) {
 	.container {
-		grid-template-rows: auto auto 550px 100px;
+		grid-template-rows: auto auto 700px 100px;
 		grid-template-areas:
 		"logo logo logo logo"
 		"navbar navbar navbar navbar"
