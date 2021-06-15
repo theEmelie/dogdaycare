@@ -39,6 +39,25 @@
 	border-radius: 5px;
 }
 
+.walks {
+	margin-top: 30px;
+}
+
+
+/* MEDIUM DESKTOPS */
+@media screen and (max-width: 1200px) {
+	.container {
+		grid-template-rows: auto auto 550px 115px;
+		grid-template-areas:
+		"logo logo logo logo"
+		"navbar navbar navbar navbar"
+		"rollingImages rollingImages rollingImages rollingImages"
+		"header header header header"
+		"textOne textOne image image"
+        "imageTwo imageTwo textTwo textTwo"
+		"footer footer footer footer";
+	}
+}
 
 /* TABLETS */
 @media screen and (max-width: 1025px) {

@@ -71,6 +71,20 @@
 }
 
 /* TABLETS */
+@media screen and (max-width: 1200px) {
+	.container {
+		grid-template-rows: auto auto 550px 100px;
+		grid-template-areas:
+		"logo logo logo logo"
+		"navbar navbar navbar navbar"
+		"rollingImages rollingImages rollingImages rollingImages"
+		"header header header header"
+		"gallery gallery gallery gallery"
+		"footer footer footer footer";
+	}
+}
+
+/* TABLETS */
 @media screen and (max-width: 1025px) {
 	.container {
 		grid-template-rows: auto auto 550px 100px;

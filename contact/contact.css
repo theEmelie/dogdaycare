@@ -99,6 +99,25 @@ textarea {
 	width: 750px;
 }
 
+/* MEDIUM DESKTOPS */
+@media screen and (max-width: 1200px) {
+	.container {
+		grid-template-rows: auto auto 550px 115px;
+		grid-template-areas:
+		"logo logo logo logo"
+		"navbar navbar navbar navbar"
+		"rollingImages rollingImages rollingImages rollingImages"
+		"header header header header"
+		"textOne textOne textOne textOne"
+		"contact contact contact contact"
+		"footer footer footer footer";
+	}
+
+	.success-msg {
+		width: 100%;
+	}
+}
+
 /* TABLETS */
 @media screen and (max-width: 1025px) {
 	.container {
@@ -111,6 +130,10 @@ textarea {
 		"textOne textOne textOne textOne"
 		"contact contact contact contact"
 		"footer footer footer footer";
+	}
+
+	.success-msg {
+		width: 100%;
 	}
 }
 
@@ -126,5 +149,17 @@ textarea {
 		"textOne textOne textOne textOne"
 		"contact contact contact contact"
 		"footer footer footer footer";
+	}
+
+	.success-msg {
+		width: 100%;
+	}
+
+	.container form .details {
+		display: block;
+	}
+
+	form .details .input {
+		width: 100%;
 	}
 }

@@ -14,8 +14,7 @@ function showCycleImages() {
     cycleIndex++;
 
     // See if index is bigger than the length of the elements. If so set index to 1
-    if (cycleIndex > cycles.length)
-    {
+    if (cycleIndex > cycles.length) {
         cycleIndex = 1;
     }
 
@@ -34,12 +33,10 @@ function showCycleImages() {
 //      });
 //
 //      cycleIndex++;
-//      if (cycleIndex > cycles.length)
-//      {
+//      if (cycleIndex > cycles.length) {
 //          cycleIndex = 1
 //      }
 //
-//
 //      $(".cycle-images").next().css({"display": "block"});
-//      setTimeout(cycleImages, 3500); // Change image every 3.5 seconds
+//      setTimeout(cycleImages, 3500);
 // }
