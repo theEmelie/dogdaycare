@@ -4,9 +4,10 @@ contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
 
     const messages  = document.getElementById('messages');
-    let errorMessage = '';
+    let successMessage = '';
 
-    if (!errorMessage) {
+    // Display a message when user sends a form.
+    if (!successMessage) {
         messages.innerHTML = `<div class="success-msg">Formuläret är skickat! Vi återkommer snarast.</div>`;
     }
 });
